@@ -19,9 +19,8 @@ class position:
         
         self.Positions = str(Positions)
         
-        # Pull out the numbers in the range using the RE findall function. 
+        # Pull out the numbers in the range.
         self.SplitPositions = self.Positions[1:-1].split(",")      
-        self.InitialPositionsInList = [float(x) for x in re.findall(r"[-+]?\d*\.\d+|\d+", Positions)]
         
         # In this section, I do some error testing to make sure that the user is feeding the right kind of input.
         
@@ -31,26 +30,26 @@ class position:
                 raise PositionsException("Positions not given in list.")
             for element in self.SplitPositions:
                 try:
-                    float(element)
+                    self.SplitPositionsFinal = [float(element) for element in self.SplitPositions]
                 except ValueError:
                     raise PositionsException("Invalid positions.")
                 
         def EmptySetHandling():
-            if self.InitialPositionsInList ==[]:
+            if self.SplitPositions ==[]:
                 raise PositionsException("Empty position list.")
             
         def ImproperPositionsHandling():
             """ if the positions are not either 1, 10 , 100 or 1000, throw an exception."""
             NumberOfErrors = [] 
-            for element in self.InitialPositionsInList:
+            for element in self.SplitPositionsFinal:
                 if element!=1 and element!=10 and element!=100 and element!=1000: 
                     NumberOfErrors.append(element)
                 if len(NumberOfErrors)>0:
                     raise PositionsException("Positions must be in $1, $10, $100, or $1000 denominations.")
-        
+
+        NotAListHandling()        
         EmptySetHandling()
         ImproperPositionsHandling()
-        NotAListHandling()
         
-        self.PositionsInList = [int(x) for x in  self.InitialPositionsInList]
+        self.PositionsInList = [int(x) for x in  self.SplitPositionsFinal]
             

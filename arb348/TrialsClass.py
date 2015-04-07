@@ -6,8 +6,6 @@ Created on Mar 31, 2015
 @author: Adam Biesenbach
 '''
 
-import re
-
 # Create a new class for handling positions errors.
 class TrialException(Exception): pass
 
