@@ -1,0 +1,16 @@
+$1000
+Standard Deviation:0.999481
+Mean:0.032200
+
+$1
+Standard Deviation:0.031614
+Mean:0.019962
+
+$10
+Standard Deviation:0.099306
+Mean:0.019108
+
+$100
+Standard Deviation:0.317227
+Mean:0.021520
+
