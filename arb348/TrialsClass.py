@@ -35,7 +35,7 @@ class trial:
                 raise TrialException("Invalid trial.")
 
         def ImproperTrialsHandling():
-            """ If there is more than one number, the list is empty, or the element is not an integer, throw exception."""
+            """ If the element is not an integer or is negative, throw exception."""
             if self.TrialsInList<=0 or (self.TrialsInList.is_integer() is False):
                 raise TrialException("Number of trials must be integer greater than zero.")
             else:
