@@ -42,4 +42,7 @@ def silentremove(filename):
         os.remove(filename)
     except OSError as e: 
         if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
-            raise # re-raise exception if a different error occured
+            raise HistException("A different error occured in creating the histograms.")
+        
+# Create a new class for handling positions errors.
+class HistException(Exception): pass
