@@ -1,4 +1,4 @@
 Here are the mean daily returns for the positions [1, 10, 100, 1000]: 
-[ 0.0162     0.02396    0.020692   0.0198566]
+[ 0.0266     0.01882    0.020258   0.0201018]
  Here are the standard deviations of daily returns for the positions [1, 10, 100, 1000]: 
-[ 0.99986877  0.31363979  0.09978618  0.03181119]
+[ 0.99964616  0.3147345   0.09894834  0.03147682]

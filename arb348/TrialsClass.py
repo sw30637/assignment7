@@ -19,39 +19,28 @@ class trial:
         
         self.Trials = str(Trials)
         # Pull out the numbers in the range using the RE findall function. 
-        self.TrialsInList = [float(x) for x in re.findall(r"[-+]?\d*\.\d+|\d+", Trials)]
-        
+        #self.TrialsInList = [float(x) for x in re.findall(r"(-?\d*\.\d+|\d+)", Trials)]
         # In this section, I do some error testing to make sure that the user is feeding the right kind of input.
                 
         def EmptySetHandling():
             """ If the user submits an empty list, throw an exception."""
-            if self.TrialsInList ==[]:
+            if self.Trials is None:
                 raise TrialException("Empty trials list.")
         
         def ImproperInputHandling():
             """If they enter something that cannot be converted to a float [like letters or brackets], throw an exception."""
             try:
-                float(self.Trials)
+                self.TrialsInList =float(self.Trials)
             except ValueError:
                 raise TrialException("Invalid trial.")
-        
+
         def ImproperTrialsHandling():
             """ If there is more than one number, the list is empty, or the element is not an integer, throw exception."""
-            NumberOfErrors = [] 
-            if len(self.TrialsInList)>1:
-                raise TrialException("Invalid Trial list: too many elements in list.")
-            elif len(self.TrialsInList)==0:
-                raise TrialException("Invalid Trial list: empty list")
-            else:   
-                for element in self.TrialsInList:
-                    if element<=0 or element.is_integer() is False:
-                        NumberOfErrors.append(element)
-                    if len(NumberOfErrors)>0:
-                        raise TrialException("Number of trials must be integer greater than zero.")
-                    else:
-                        self.TrialNumber = int(self.TrialsInList[0])
+            if self.TrialsInList<=0 or (self.TrialsInList.is_integer() is False):
+                raise TrialException("Number of trials must be integer greater than zero.")
+            else:
+                self.TrialNumber = int(self.TrialsInList)
 
         EmptySetHandling()
-        ImproperTrialsHandling()
         ImproperInputHandling()
-            
+        ImproperTrialsHandling()
