@@ -4,9 +4,8 @@ error handling to ensure that the input form the user conforms to the requiremen
 
 Created on Mar 31, 2015
 @author: Adam Biesenbach
-'''
 
-import re
+'''
 
 # Create a new class for handling positions errors.
 class PositionsException(Exception): pass
