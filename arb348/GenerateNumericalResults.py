@@ -7,7 +7,7 @@ Created on Apr 5, 2015
 import numpy as np
 
 def CreateNumericalResults(cumu_ret, daily_ret):
-    """ Compute the mean and STD of daily returns for each of the numbers of 
+    """ Compute the mean and STD of daily returns for each of the 
     positions, and save the results to a text file. """
     
     # axis = 0 says to collapse along the columns. 

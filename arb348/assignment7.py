@@ -1,10 +1,6 @@
 '''
 This is programming for Assignment 7. This is the main program which will 
 generate my answers for the assignment, which deals with programming in NumPy.
-Each of the questions from the assignment has its own module, and from each module 
-we import the function responsible for generating the required output. In addition, I 
-performed some unit testing of the functions used to generate the results displayed here. 
-
 
 Author: Adam Biesenbach
 Date: March 31, 2015
