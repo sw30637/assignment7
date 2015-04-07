@@ -12,7 +12,7 @@ Date: March 31, 2015
 from GenerateReturns import GenerateDailyReturns
 from AcceptInputFromUser import ReturnUserInput
 from PlotHistograms import PlotHistograms
-from NumericalResults import CreateNumericalResults
+from GenerateNumericalResults import CreateNumericalResults
 import sys 
 
 if __name__ == '__main__':
