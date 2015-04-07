@@ -44,5 +44,5 @@ def silentremove(filename):
         if e.errno != errno.ENOENT: # errno.ENOENT = no such file or directory
             raise HistException("A different error occured in creating the histograms.")
         
-# Create a new class for handling positions errors.
+# Create a new class for handling histogram errors.
 class HistException(Exception): pass
