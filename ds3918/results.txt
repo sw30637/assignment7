@@ -1,0 +1,5 @@
+Number of investments and the corresponding daily returns means and standard deviations:
+1: mean = 0.016; sd = 1.000
+10: mean = 0.022; sd = 0.314
+100: mean = 0.020; sd = 0.100
+1000: mean = 0.020; sd = 0.031
