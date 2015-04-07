@@ -1,0 +1,10 @@
+Expected Value of Daily Return 
+ $1000 Per Share: 996.2
+ $100 Per Share: 1017.58
+ $10 Per Share: 1020.022
+ $1 Per Share: 1019.783
+Standard Deviation 
+ $1000 Per Share: 999.992779974
+ $100 Per Share: 314.068374084
+ $10 Per Share: 99.8328578976
+ $1 Per Share: 31.7033075719
