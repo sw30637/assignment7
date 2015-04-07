@@ -16,8 +16,7 @@ class trial:
     def __init__(self, Trials):
         
         self.Trials = str(Trials)
-        # Pull out the numbers in the range using the RE findall function. 
-        #self.TrialsInList = [float(x) for x in re.findall(r"(-?\d*\.\d+|\d+)", Trials)]
+                
         # In this section, I do some error testing to make sure that the user is feeding the right kind of input.
                 
         def EmptySetHandling():
