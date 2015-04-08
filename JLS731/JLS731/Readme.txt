@@ -1,0 +1,1 @@
+The expected return of investing $1000 with the probability of doubling the investment in any "position" is 2%. However, as the results show, it's much safer to invest a little a lot of times (e.g $1 1000 times) than to invest large amounts only a few times. This is because by investing little at a time we reduce the volaility (standard deviation) of the return. 
