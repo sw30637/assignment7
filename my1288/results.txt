@@ -1,0 +1,5 @@
+The following are the calculation results: 
+1: Mean = 0.0114, Std Dev = 0.999935017889
+10: Mean = 0.02466, Std Dev = 0.314725093375
+100: Mean = 0.018736, Std Dev = 0.0991286149606
+1000: Mean = 0.020039, Std Dev = 0.0317955795513
