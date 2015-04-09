@@ -1,0 +1,4 @@
+1: mean = 0.0192 standard deviation = 0.99981566301
+10: mean = 0.02462 standard deviation = 0.0999696881859
+100: mean = 0.019864 standard deviation = 0.00999802691283
+1000: mean = 0.0196136 standard deviation = 0.000999807634845
